@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Checkout
         id: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.0
 
       - name: Setup Node.js
         id: setup-node
@@ -48,7 +48,7 @@ jobs:
         version: ['v0.1.2', 'v0.2.1', 'latest']
     runs-on: ${{ matrix.platform }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6.0.0
       - name: simply install
         uses: ./
         with:
